@@ -1,0 +1,191 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="profile-prep.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="icon" href="/home/ash/Desktop/Ash/Project Code/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/home/ash/Desktop/Ash/Project Code/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <title>
+    Colloquium
+  </title>
+  <style>
+    .nav-font-size {
+      font-family: 'Quicksand', serif;
+      }
+  </style>
+
+  <body>
+    <nav class="nav-login">
+      <div class="nav-login-dashboard">
+        <a href="trial1">
+          <button class="nav-button">
+            <div class="nav-font-size">
+              Dashboard
+            </div>
+          </button>
+        </a>
+      </div>
+
+      <div class="nav-login-donate">
+        <a href="trial1">
+          <button class="nav-button">
+            <div class="nav-font-size">
+              Donate
+            </div>
+          </button>
+        </a>
+      </div>
+
+      <div class="nav-login-profile">
+        <a href="trial1">
+          <button class="nav-button">
+            <div class="nav-font-size">
+              Profile
+            </div>
+          </button>
+        </a>
+      </div>
+
+      <div class="nav-login-logout">
+        <a href="trial1">
+          <button class="nav-button">
+            <div class="nav-font-size">
+              Log Out
+            </div>
+          </button>
+        </a>
+      </div>
+    </nav>
+
+    <div class="profile-container">
+      <h1 class="profile-heading">Profile
+        <button id="profile-edit-button" onclick="document.getElementById('id1')
+                                                  .style.display = 'grid'
+                                                  document.getElementById('profile-edit-button')
+                                                  .style.display = 'none'">
+          <span style="font-size: 70%" class="glyphicon glyphicon-pencil"></span> Edit
+        </button>
+      </h1>
+      <div class="profile-info-text">
+        <div class="profile-username-text">
+          Username
+        </div>
+        <div class="profile-name-text">
+          Name
+        </div>
+        <div class="profile-email-text">
+          Email
+        </div>
+        <div class="profile-class-text">
+          Class
+        </div>
+
+      </div>
+      <div class="profile-info">
+        <div class="profile-username">
+          boombiryani4lyf
+        </div>
+        <div class="profile-name">
+          Boom Biryani
+        </div>
+        <div class="profile-email">
+          boom.biryani@bb.com
+        </div>
+        <div class="profile-class">
+          6
+        </div>
+      </div>
+        <div class="profile-divider">
+        </div>
+
+      <div class="profile-edit-info" id="id1">
+        <div class="profile-edit-username">
+            <input class="profile-edit-field" type="text" required>
+        </div>
+
+        <div class="profile-edit-name">
+            <input class="profile-edit-field" type="text" required>
+        </div>
+
+        <div class="profile-edit-email">
+            <input class="profile-edit-field" type="text" required>
+        </div>
+
+        <div class="profile-edit-class">
+            <input class="profile-edit-field" type="text" required>
+        </div>
+
+        <div class="profile-save">
+          <button class="profile-save-button" onclick="document.getElementById('id1')
+                                                    .style.display = 'none'
+                                                    document.getElementById('profile-edit-button')
+                                                    .style.display = 'inline'">
+            Save Changes
+          </button>
+        </div>
+      </div>
+
+      <div class="profile-edits-heading">
+        Pending Edits
+      </div>
+
+      <div class="profile-pending-edits">
+        <div class="profile-pending-edit1">
+            1/11/1111
+            <p class="profile-details">
+            Class 11 Math
+            </p>
+          </div>
+          <div>
+            Bla bla bla
+          </div>
+        </div>
+
+        <div class="profile-pending-edit2">
+            1/11/1111
+            <p class="profile-details">
+              Class 11 Math
+            </p>
+          <div>
+            Bla bla bla
+          </div>
+        </div>
+
+        <div class="profile-pending-edit3">
+            1/11/1111
+          <p class="profile-details">
+            Class 11 Math
+          </p>
+          <div>
+            Bla bla bla
+          </div>
+        </div>
+        <div class="profile-pending-edit4">
+            1/11/1111
+          <p class="profile-details">
+            Class 11 Math
+          </p>
+          <div>
+            Bla bla bla
+          </div>
+        </div>
+
+        <div class="profile-pending-edit5">
+            1/11/1111
+            <p class="profile-details">
+              Class 11 Math
+            </p>
+          <div>
+            Bla bla bla
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+
+  </body>

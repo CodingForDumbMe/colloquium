@@ -1,0 +1,440 @@
+body {
+  background-image: linear-gradient(-90deg, #4CABE6, #3891A6);
+  width: 99.42%;
+  max-width: 100%;
+  font-family: 'Quicksand', serif;
+  overflow-x:hidden;
+
+}
+/* Nav Bar */
+.nav-primary {
+  background-color: #2E282A;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr calc(60% - 11em) 1fr 1fr;
+  width: 100%;
+  height: 4em;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}
+.nav-font-size {
+  font-size: 120%;
+  font-size: min(6vw, 120%);
+  color: white;
+}
+.nav-button {
+  background-color: #2E282A;
+  color: white;
+  border-width: 0px;
+}
+.nav-login-button {
+  grid-column: 6 / 7;
+  justify-self: center;
+  align-self: center;
+}
+.nav-signup-button {
+  grid-column: 5 / 6;
+  justify-self: center;
+  align-self: center;
+}
+.nav-home-button {
+  grid-column: 1 / 2;
+  justify-self: center;
+  align-self: center;
+}
+.nav-aboutus-button {
+  grid-column: 2 / 3;
+  justify-self: center;
+  align-self: center;
+}
+.nav-contactinfo-button {
+  grid-column: 3 / 4;
+  justify-self: center;
+  align-self: center;
+}
+
+/* Index */
+
+.index-grid {
+  height: 97vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: calc(40% - 100em) 1fr calc(40% - 100em);
+  grid-template-rows: 5em max-content max-content max-content;
+}
+.index-logo-box {
+  justify-self: center;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.index-logo {
+  max-width: 95vw;
+}
+.index-colloquium-heading {
+  justify-self: center;
+  align-self: center;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  font-size: 400%;
+  max-width: 95vw;
+  font-size: min(400%, 100vw);
+  color: white;
+}
+.index-intro-text {
+  justify-self: center;
+  align-self: center;
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  text-align: center;
+  font-size: 125%;
+  max-width: 95vw;
+  color: white;
+}
+
+/*Login*/
+
+.login-grid {
+  width: 97vw;
+  display: grid;
+  grid-template-columns: calc(40% - 10em) 1fr calc(40% - 10em);
+  grid-template-rows: 5em max-content;
+}
+.login-box {
+  justify-self: center;
+  border-radius: 10%;
+  background-color: #00884F;
+  border: 0.05em black solid;
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  grid-template-columns: 15% 1fr 15%;
+  grid-template-rows: 15% 6% 6.8% 3% 6% 6.8% 3% 7.3% 7.3% 7.3% 1fr;
+  width: 80%;
+  height: 170%;
+}
+.login-text {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: center;
+  font-size: 270%;
+  color: black;
+}
+.login-username-text {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 150%;
+  color: black;
+}
+.login-username-field-div {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+.login-username-field {
+  width: 100%;
+  border-width: 0px;
+  height: 7%;
+  height: max(7%, 100%);
+  font-size: 120%;
+}
+.login-underline-username-field {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  height: 0px;
+  border: 0.12em black solid;
+  border-radius: 100000000vh;
+}
+.login-password-text {
+  grid-column: 2 / 3;
+  grid row: 5 / 6;
+  font-size: 150%;
+  color: black;
+}
+.login-password-field-div {
+  grid-column: 2 / 3;
+  grid-row: 6 / 7;
+}
+.login-password-field {
+  width: 100%;
+  border-width: 0px;
+  height: 7%;
+  height: max(7%, 100%);
+  font-size: 120%;
+}
+.login-underline-password-field {
+  grid-column: 2 / 3;
+  grid-row: 7 / 8;
+  height: 0px;
+  border: 0.12em black solid;
+  border-radius: 100000000vh;
+}
+.login-forgot-password-div {
+  grid-column: 2 / 3;
+  grid-row: 8 / 9;
+
+}
+.login-forgot-password {
+  font-size: 150%;
+  text-decoration: none;
+  color: black;
+}
+.login-remember-me-div {
+  grid-column: 2 / 3;
+  grid-row: 9 / 10;
+  font-size: 150%;
+  color: black;
+}
+.login-remember-me-checkbox {
+  background-color: black;
+  font-size: 20em;
+}
+.login-create-an-account-div {
+  grid-column: 2 / 3;
+  grid-row: 10 / 11;
+}
+.login-create-an-account {
+  font-size: 150%;
+  color: black;
+  text-decoration: none;
+  color: black;
+}
+.login-button-div {
+  align-self: center;
+  grid-column: 2 / 3;
+  grid-row: 11 / 12;
+}
+.login-button {
+  border-radius: 4rem;
+  font-size: 150%;
+  color: black;
+  background-color: #F49D37;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 10%;
+  height: max(10%, 30%);
+  border-width: 0px;
+}
+
+/* Sign Up */
+
+.signup-grid {
+  width: 97vw;
+  display: grid;
+  grid-template-columns: calc(30% - 10em) 1fr 1% 1fr calc(30% - 10em);
+  grid-template-rows: 5em max-content;
+}
+.signup-box {
+  width: 100%;
+  height: 120%;
+  grid-column: 2 / 5;
+  grid-row: 2 / 3;
+  grid-template-columns: 2fr 49fr 10fr 49fr 2fr;
+  grid-template-rows: 1fr 10fr 2fr;
+  background-color: white;
+  justify-self: center;
+  background-color: white;
+  border: 0.05em black solid;
+  display: grid;
+  align-self: center;
+  height: 80vh;
+}
+.signup-column1 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 10% 12% 2% 10% 12% 2% 10% 7% 7% 7% 7%;
+}
+.signup-firstname-text {
+  grid-row: 1 / 2;
+  font-size: 150%;
+  color: black;
+}
+.signup-signup-firstname-field-div {
+  grid-row: 2 / 3;
+}
+.signup-firstname-field {
+  width: 100%;
+  border-width: 0px;
+  height: 7%;
+  height: max(7%, 100%);
+  font-size: 120%;
+}
+.signup-firstname-underline {
+  grid-row: 3 / 4;
+  height: 0px;
+  background-color: black;
+  border: 0.12em black solid;
+  border-radius: 100000000vh;
+}
+.signup-lastname-text {
+  grid-row: 4 / 5;
+  font-size: 150%;
+  color: black;
+}
+.signup-lastname-field-div {
+  grid-row: 5 / 6;
+}
+.signup-lastname-field {
+  width: 100%;
+  border-width: 0px;
+  height: 7%;
+  height: max(7%, 100%);
+  font-size: 120%;
+}
+.signup-lastname-underline {
+  grid-row: 6 / 7;
+  height: 0px;
+  background-color: black;
+  border: 0.12em black solid;
+  border-radius: 100000000vh;
+}
+.signup-role-text {
+  grid-row: 7 / 8;
+  font-size: 150%;
+  color: black;
+}
+.signup-role-student {
+  grid-row: 8 / 9;
+  font-size: 150%;
+  color: black;
+}
+.signup-role-teacher {
+  grid-row: 9 / 10;
+  font-size: 150%;
+  color: black;
+}
+.signup-role-parent {
+  grid-row: 10 / 11;
+  font-size: 150%;
+  color: black;
+}
+.signup-role-other {
+  grid-row: 11 / 12;
+  font-size: 150%;
+  color: black;
+}
+#other-text {
+  border-width: 0px 0px 3px 0px;
+  border-color: black;
+}
+.signup-column-divider {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  align-self: center;
+  justify-self: center;
+  height: 90%;
+  width: 5%;
+  border-radius: 100000vh;
+  background-color: black;
+}
+.signup-column2 {
+  grid-row: 2 / 3;
+  grid-column: 4 / 5;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 10%;
+}
+.signup-username-text {
+  grid-row: 1 / 2;
+  font-size: 150%;
+  color: black;
+}
+.signup-username-field-div {
+  grid-row: 2 / 3;
+}
+.signup-username-field {
+  width: 100%;
+  border-width: 0px;
+  height: 7%;
+  height: max(7%, 100%);
+  font-size: 120%;
+}
+.signup-username-underline {
+  grid-row: 3 / 4;
+  height: 0px;
+  background-color: black;
+  border: 0.12em black solid;
+  border-radius: 100000000vh;
+}
+.signup-email-text {
+  grid-row: 4 / 5;
+  font-size: 150%;
+  color: black;
+}
+.signup-email-field-div {
+  grid-row: 5 / 6;
+}
+.signup-email-field {
+  width: 100%;
+  border-width: 0px;
+  height: 7%;
+  height: max(7%, 100%);
+  font-size: 120%;
+}
+.signup-email-underline {
+  grid-row: 6 / 7;
+  height: 0px;
+  background-color: black;
+  border: 0.12em black solid;
+  border-radius: 100000000vh;
+}
+.signup-password-text {
+  grid-row: 7 / 8;
+  font-size: 150%;
+  color: black;
+}
+.signup-password-field-div {
+  grid-row: 8 / 9;
+}
+.signup-password-field {
+  width: 100%;
+  border-width: 0px;
+  height: 7%;
+  height: max(7%, 100%);
+  font-size: 120%;
+}
+.signup-password-underline {
+  grid-row: 9 / 10;
+  height: 0px;
+  background-color: black;
+  border: 0.12em black solid;
+  border-radius: 100000000vh;
+}
+.signup-confirm-password-text {
+  grid-row: 10 / 11;
+  font-size: 150%;
+  color: black;
+}
+.signup-confirm-password-field-div {
+  grid-row: 11 / 12;
+}
+.signup-confirm-password-field {
+  width: 100%;
+  border-width: 0px;
+  height: 7%;
+  height: max(7%, 100%);
+  font-size: 120%;
+}
+.signup-confirm-password-underline {
+  grid-row: 12 / 13;
+  height: 0px;
+  background-color: black;
+  border: 0.12em black solid;
+  border-radius: 100000000vh;
+}
+.signup-button-div {
+  grid-column: 2 / 5;
+  grid-row: 3 / 4;
+}
+.signup-button {
+  border-radius: 4rem;
+  font-size: 150%;
+  color: black;
+  background-color: #F49D37;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  height: max(30%, 50%);
+  border-width: 0px;
+}
